@@ -1,28 +1,36 @@
 {
   "name": "qtail-js",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "一个轻量级的用于生成带小尾巴的 qq 昵称的 JavaScript 库",
-  "main": "./index.cjs",
-  "module": "./index.mjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
-      "require": "./index.cjs",
-      "import": "./index.mjs"
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "browser": "./dist/esm/index.js"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/latedreamdev/qtail-js.git"
+    "url": "git+https://github.com/LateDreamXD/qtail-js.git"
   },
   "keywords": [
     "qtail",
     "qq",
     "nickname"
   ],
-  "author": "latedream",
-  "license": "MPL-2.0",
+  "author": "LateDream <latedreamawa@outlook.com> (https://i.latedream.ggff.net)",
+  "license": "ZML-2.0",
   "bugs": {
-    "url": "https://github.com/latedreamdev/qtail-js/issues"
+    "url": "https://github.com/LateDreamXD/qtail-js/issues"
   },
-  "homepage": "https://github.com/latedreamdev/qtail-js#readme"
+  "homepage": "https://github.com/LateDreamXD/qtail-js#readme",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
 }
