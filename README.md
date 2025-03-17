@@ -1,7 +1,7 @@
 # qtail.js
 <div align="center">
 
-[![license](https://img.shields.io/badge/license-MPL--2.0-green/?style=flat-square)](https://mozilla.org/MPL/2.0/)
+[![license](https://img.shields.io/badge/license-ZML--2.0-green/?style=flat-square)](https://github.com/YShenZe/ZeMeng-License)
 [![GitHub Repo stars](https://img.shields.io/github/stars/LateDreamXD/qtail-js?style=flat-square&logo=github&color=#ff0)](https://github.com/LateDreamXD/qtail-js/stargazers)
 [![NPM Version](https://img.shields.io/npm/v/qtail-js?style=flat-square&logo=npm)](https://www.npmjs.com/package/qtail-js?activeTab=versions)
 [![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/qtail-js?style=flat-square&logo=npm)](https://www.npmjs.com/package/qtail-js)
