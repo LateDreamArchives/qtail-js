@@ -3,3 +3,6 @@
 types/
 dist/
 node_modules/
+
+*ignore
+pnpm-*.yaml
