@@ -3,34 +3,29 @@
   "version": "2.0.0",
   "description": "一个轻量级的用于生成带小尾巴的 qq 昵称的 JavaScript 库",
   "scripts": {
-    "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json"
+    "build": "node esbuild.config.js",
+    "postbuild": "tsc --emitDeclarationOnly --outDir types --excludeFiles"
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./types/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "browser": "./dist/esm/index.js"
-    }
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LateDreamXD/qtail-js.git"
+    "url": "https://github.com/LateDreamXD/qtail-js.git"
   },
   "keywords": [
     "qtail",
     "qq",
     "nickname"
   ],
-  "author": "LateDream <latedreamawa@outlook.com> (https://i.latedream.ggff.net)",
-  "license": "ZML-2.0",
+  "author": "LateDreamXD",
+  "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/LateDreamXD/qtail-js/issues"
   },
   "homepage": "https://github.com/LateDreamXD/qtail-js#readme",
   "devDependencies": {
-    "typescript": "^5.8.2"
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
   }
 }

@@ -2,9 +2,12 @@
 	"compilerOptions": {
 		"strict": true,
 		"declaration": true,
+		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
 
 		"rootDir": "src",
 		"declarationDir": "types",
-	}
+	},
+	"include": ["src/*.ts"]
 }
