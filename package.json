@@ -1,6 +1,6 @@
 {
   "name": "qtail-js",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "一个轻量级的用于生成带小尾巴的 qq 昵称的 JavaScript 库",
   "scripts": {
     "build": "node esbuild.config.js",
