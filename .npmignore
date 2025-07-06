@@ -2,7 +2,10 @@
 
 .*ignore
 tsconfig.*
+esbuild.config.js
 
 .github/
 src/
 node_modules/
+
+pnpm-*.yaml
