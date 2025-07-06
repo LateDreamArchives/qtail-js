@@ -1,7 +1,7 @@
 # qtail.js
 <div align="center">
 
-[![license](https://img.shields.io/badge/license-ZML--2.0-green/?style=flat-square)](https://github.com/YShenZe/ZeMeng-License)
+[![license](https://img.shields.io/badge/license-MPL--2.0-green/?style=flat-square)](...)
 [![GitHub Repo stars](https://img.shields.io/github/stars/LateDreamXD/qtail-js?style=flat-square&logo=github&color=#ff0)](https://github.com/LateDreamXD/qtail-js/stargazers)
 [![NPM Version](https://img.shields.io/npm/v/qtail-js?style=flat-square&logo=npm)](https://www.npmjs.com/package/qtail-js?activeTab=versions)
 [![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/qtail-js?style=flat-square&logo=npm)](https://www.npmjs.com/package/qtail-js)
@@ -12,27 +12,27 @@
 ### fast start
 [using cdn?](#cdn)
 ```bash
-npm ins qtail-js
-yarn add qtail-js
-pnpm add qtail-js
+pnpm add qtail-js # recommended
+# yarn add qtail-js
+# npm ins qtail-js
 ```
 ```ts
-import qtail from 'qtail-js'; // or const qtail = require('qtail-js').default;
-const Qtail = new qtail(nick: string, tail: string, compatible?: boolean);
-console.log(Qtail.generate()); // 'nick⁧tail⁦'
+import Qtail from 'qtail-js'; // or const qtail = require('qtail-js').default;
+const qtail = new Qtail(nick?: string, tail?: string, compatible?: boolean);
+console.log(qtail.generate()); // 'nick⁧tail⁦'
 ```
 #### cdn
 ```js
-import qtail from 'https://cdn.jsdelivr.net/npm/qtail-js@latest/+esm';
+import Qtail from 'https://fastly.jsdelivr.net/npm/qtail-js@latest/+esm';
 ```
 
 ### upgrade from 1.x
 ```diff
--import qtail from 'qtail-js'; // or const qtail = require('qtail-js');
-+import qtail from 'qtail-js'; // or const qtail = require('qtail-js').default;
+-import qtail from 'qtail-js'; // or const Qtail = require('qtail-js');
++import Qtail from 'qtail-js'; // or const Qtail = require('qtail-js').default;
 -const result = qtail.generate(nick, tail);
-+const Qtail = new qtail(nick, tail, true);
-+const result = Qtail.generate();
++const qtail = new Qtail(nick, tail, true);
++const result = qtail.generate();
 ```
 
 ### detailed usage
@@ -44,13 +44,13 @@ import qtail from 'https://cdn.jsdelivr.net/npm/qtail-js@latest/+esm';
  * @param tail tail
  * @param compatible compatible mode (use legacy unicode) (optional, default: false)
  */
-qtail.update(nick: string, tail: string, compatible?: boolean): void;
-qtail.upd(nick: string, tail: string, compatible?: boolean): void;
+Qtail.update(nick: string, tail: string, compatible?: boolean): void;
+Qtail.upd(nick: string, tail: string, compatible?: boolean): void;
 
 /**
  * generate nickname with tail
  * @returns nickname with tail
  */
-qtail.generate(): string;
-qtail.gen(): string;
+Qtail.generate(): string;
+Qtail.gen(): string;
 ```
